@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- link bootstrap -->
+    <link rel="stylesheet" href="/css/style-bootstrap.css">
+    <!-- link shortcut  -->
+    <link rel="shortcut icon" href="../img/logo1.png">
+    <title>Document</title>
+</head>
+<body>
+<!-- Comienza el Header -->
+    <header class="container-fluid color-header  position-sticky top-0">
+      <div class="row justify-content-between">
+            <nav class="navbar navbar-expand-lg navbar-light col-12">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="/img/logo3.png" alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                            <li class="nav-item">
+                                <a class="nav-link active navbar-color" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active navbar-color" aria-current="page" href="/pages/productos.html">Producto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active navbar-color" aria-current="page" href="/pages/preguntasfrecuentes.html">Preguntas Frecuentes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active navbar-color" aria-current="page" href="/pages/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active navbar-color" aria-current="page" href="/pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+      </div>
+    </header>
+<!-- Termina el Header -->
+<!-- comienza el Main -->
+    <main class="container-fluid">
+        <div class="row">
+            <h1 class=" text-center position-static col-12 estilo-text-h1 text-uppercase estilo-titulo-index"> Bienvenidos a nuestra tienda On-Line</h1>
+        </div>
+
+        <div class="row justify-content-center ">
+            <div class="position-static overflow-hidden col-md-10 col-lg-10" >
+                <img src="/img/fondo1.jpg" class="img-fluid " alt="fondo">
+            </div>
+        </div>
+
+        <div class="d-flex flex-row sm-0 justify-content-evenly align-items-center position-static color-info-main"  style="background-color: #F3EFEE;">
+            <div class="p-2 col-4 text-center border-end border-secondary border-1"  >
+                <img src="/img/pay.png" alt="pago" class="img-fluid p-2 img-info">
+                <p class="p-1 m-1 ">Metodo de pago</p>
+            </div>
+            <div class="p-2 col-4 text-center border-end border-secondary border-1">
+                <img src="/img/camionenvio.png"alt="envio" class="img-fluid p-1 img-info">
+                <p class="p-1 m-1 ">Envíos gratis + 6.000,00 $</p>
+            </div> 
+            <div class="p-2 col-4 text-center">
+                <img src="/img/devolucion.png" alt="devolucion"  class="img-fluid p-1 img-info">
+                <p class="p-1 m-1 ">Devolución gratis</p>
+            </div>
+           
+        </div>
+
+        <div class="row">
+            <h2 class=" text-center p-3 position-static col-12 estilo-text-h2 text-uppercase estilo-titulo-index" > Productos Destacados </h2>
+        </div>
+<!-- armo un carrusel para las imagenes de los productos destacados  -->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container marketing">
+                    <div class="row justify-content-between ">
+                        <div class="card col-sd-1 col-md-4 m-sd-1 m-md-4 position-static estilo-imagen-producto" >
+                            <img src="img/productos/cesta.jpg" class="card-img-top img-fluid transforma-imagen" alt=" Canasto Organizador Decorativo">
+                            <div class="card-body">
+                                <h5 class="card-title">Canasto Organizador Decorativo</h5>
+                                <p class="card-text">5.400,00 $</p>
+                                <a href="#" class="btn btn-outline-secondary btn-sm">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="card col-sd-1 col-md-4 m-sd-1 m-md-4 position-static estilo-imagen-producto">
+                            <img src="img/productos/envaces.jpg" class="card-img-top img-fluid transforma-imagen" alt=" Set de envases de vidrio">
+                            <div class="card-body">
+                                <h5 class="card-title">Set de envases de vidrio</h5>
+                                <p class="card-text">3.600,00 $</p>
+                                <a href="#" class="btn btn-outline-secondary btn-sm">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="card col-sd-1 col-md-4  m-sd-1 m-md-4 position-static estilo-imagen-producto">
+                            <img src="img/productos/reloj.jpg" class="card-img-top img-fluid transforma-imagen" alt=" Reloj de pared moderno grande">
+                            <div class="card-body">
+                                <h5 class="card-title">Reloj de pared moderno grande</h5>
+                                <p class="card-text">9.000,00 $ $</p>
+                                <a href="#" class="btn btn-outline-secondary btn-sm">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container marketing">
+                    <div class="row justify-content-between ">
+                        <div class="card col-sd-1 col-md-4 m-sd-1 m-md-4 position-static estilo-imagen-producto">
+                            <img src="/img/productos/adorno.jpg" class="card-img-top img-fluid transforma-imagen" alt="adorno">
+                            <div class="card-body">
+                                <h5 class="card-title">Tapete pared</h5>
+                                <p class="card-text">1500 $</p>
+                                <a href="#" class="btn btn-outline-secondary btn-sm">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="card col-sd-1 col-md-4 m-sd-1 m-md-4 position-static estilo-imagen-producto">
+                            <img src="/img/productos/cesta.jpg" class="card-img-top img-fluid transforma-imagen" alt="cesta">
+                            <div class="card-body">
+                                <h5 class="card-title">Cesta</h5>
+                                <p class="card-text">2000 $</p>
+                                <a href="#" class="btn btn-outline-secondary btn-sm">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="card col-sd-1 col-md-4 m-sd-1 m-md-4  position-static estilo-imagen-producto">
+                            <img src="/img/productos/espejosol.jpg" class="card-img-top img-fluid transforma-imagen" alt="espejosol">
+                            <div class="card-body">
+                                <h5 class="card-title">Espejo Sol</h5>
+                                <p class="card-text">2500 $</p>
+                                <a href="#" class="btn btn-outline-secondary btn-sm">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev " type="button " data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </main>
+<!-- Termina el Main -->
+<!-- Empiza el Footer -->
+<!-- comienza el footer -->
+<footer>
+   <div class="container-fluid">
+        <!-- Información del contacto-->
+                    <div class="row">  
+                       <div class="col-12 estilo-contacto">
+                            <h3 class="estilo-text-h3 mb-0 text-uppercase ">CONTACTO</h3>          
+                            <p class="estilo-p-telefono mb-0">+54 11 6929 9999</p>
+                            <a class="estilo-a-mail" href="mailto:productos.deco@gmail.com">productos.deco@gmail.com</a>
+                            <p class="estilo-p-direccion">Sebastián Elcano 888, Acassuso, Buenos Aires</p>
+                       </div>
+                    </div>
+        
+        <!-- imagenes de las redes-->
+                   <div class="row text-center">
+                        <div class="col-12">
+                            <a class="estilo-a-imagen-footer" href="https://www.instagram.com/">
+                                <img src="img/instagram.png" alt="instagran" >
+                            </a>
+                            <a class="estilo-a-imagen-footer" href="http://www.facebook.com">
+                                <img src="img/facebook.png" alt="facebook">
+                            </a>
+                            <a class="estilo-a-imagen-footer" href="https://twitter.com/">
+                                <img src="img/twitter.png" alt="twitter">
+                            </a>
+                            <a class="estilo-a-imagen-footer" href="https://wa.me/0541168309372">
+                                <img src="img/whatsApp.png" alt="WhatsApp">
+                            </a>
+                        </div>
+                   </div>
+        
+                <div class="row">
+                    <h4 class="col-12 text-center estilo-text-h4 p-2 ">Todos los derechos reservados</h4>
+                </div>
+   </div>
+        </footer>
+    <!-- termina el footer -->
+<!-- Termina el Footer -->
+
+ <!-- link js boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

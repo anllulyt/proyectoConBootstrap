@@ -1,0 +1,801 @@
+/* --> Aplica para todos los HTML <-- */
+* {
+    padding: 0;
+    margin: 0;
+  }
+
+body {
+    background-color: #FFFFFF; 
+}
+
+/* Propiedades de la section sProdDesc aplica para produtos */
+.sProdDest{
+    margin: 20px;
+    padding: 0px;
+    background-color: #F3EFEEe3;
+}
+
+/* propiesdad a la lista ordenada de preguntas frecuentes*/
+.sectionMainOl{
+    text-align: center;
+    list-style: none;
+    background-color: #F3EFEEe3;
+}
+
+/* propiedades a los bloques del form de contacto*/
+.divFormulario{
+    color: #6E2D0F;
+    padding: 10px;
+    margin-left: 10px;
+    text-align:justify;
+}
+/* propiedades a los bloques del form de contacto*/
+.divFormulario{
+    color: #6E2D0F;
+    padding: 10px;
+    margin-left: 10px;
+    text-align:justify;
+}
+/* propiedades al boton enviar y borrar  del form de contacto*/
+.divFormularioBoton {
+    text-align: center;
+}
+
+/*-************* MEDIA QUERY mobile**********************/
+@media screen and (min-width: 480px)  {
+/* animacion de los titulos y propiedades*/
+.mainTitulo{
+    font-family: 'Open Sans', sans-serif;
+    font-size:1.4rem;
+    color: #6E2D0F;
+    text-align: center;
+    background-image: linear-gradient(#F3EFEE,#dbcbbd);
+    padding: 4px;
+    text-transform: uppercase;
+    animation-name: aparecer;
+    animation-duration: 1s;
+}
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* propiedades al bloque de productos APLICA PARA  PRODUCTOS */
+.divProd2{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(4,4fr);
+    gap: 10px;
+    align-items: center ;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    margin: 10px;
+    padding: 10px;  
+}
+.divProducDest2{
+    padding: 10px;
+    overflow: hidden;
+}
+/*Propiedades al H4  HTML INDEX y H2 Productos */
+.hDesc{
+    font-family: 'Open Sans', sans-serif;
+    font-size:0.7rem;
+    color: #6E2D0F;
+    text-align: left;
+    width: 100px;
+    height: 50px;
+    overflow: hidden;
+}
+.hMasProd{
+
+    display: inline;
+    background-color: #F3EFEE;
+     box-shadow: 1px 2px 5px #000000; 
+     padding: 10px;   
+    color: #6E2D0F;
+    font-family: 'Open Sans', sans-serif;
+    font-size:0.6rem;
+    border-radius: 30px;
+    position:initial;
+    margin-top: 0px;
+    position: relative;
+    bottom: 20px;
+    right: 15px;
+    border: 1px solid #6E2D0F;
+    outline: 1px solid;
+    outline-color: #6E2D0F;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);   
+    text-transform: uppercase;   
+}
+.hMasProd:hover {
+    box-shadow: inset 0 0 20px #F3EFEE;
+    outline-color: rgba(49, 138, 172, 0);
+    outline-offset: 10px;
+    text-shadow: 1px 1px 6px #fff;
+    background-color: #e2dedc;
+    font-size:0.7rem;
+    /* border-shadow:  */
+  }
+/* grid area de HTML NOSOTROS*/
+.divH1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "titulo titulo  titulo"
+    "section section  imagen"
+    "section section  imagen";
+}
+#divH1{
+    grid-area: titulo;
+}
+.sNosotros{
+    grid-area: section;
+    padding: 10px;
+
+}
+.asideNosotros{
+    grid-area: imagen;
+    padding: 20px;
+    margin-top: 0;
+    display: none;
+}
+.asideNosotros img{
+    width: 100%;
+}
+/* H2 de las preguntas frecuentes */
+.sectionMainH2{
+    font-family: 'Open Sans', sans-serif;
+   color: #6E2D0F;
+   padding-top: 1% ;
+   text-align: center;
+   font-size: 1.2rem;
+}
+/*parrafo de las respuestas de las pregintas frecuentes*/
+.sectionMainPar{
+   font-family: 'Open Sans', sans-serif;
+   color: #6E2D0F;
+   text-align: center;
+   font-size: 1rem;   
+   padding: 1px;
+}
+/* lista de las respuestas de preguntas frecuentes*/
+.ulList{
+   list-style: none;
+   font-family: 'Open Sans', sans-serif;
+   color: #6E2D0F;
+   padding: 0 ;
+   text-align: center;
+   font-size: 0.9rem; 
+}
+/*-*-*-*-*-* fin del main de prefuntas frecuentes */
+/* comienzo con main de Nosotros */
+/* propiedades del H2 y parrafo de nosotros*/
+
+#h2Nosotros {
+    color: #6E2D0F;
+    padding: 20px;
+    text-align: center;
+    background-color: #F3EFEEe3;
+     font-family: 'Open Sans', sans-serif;
+    font-size:1.2rem;
+}
+#idParrafoNosotros{
+    color: #6E2D0F;
+    padding:  20px;
+    text-align: center;
+    background-color: #F3EFEEe3;
+    font-family: 'Open Sans', sans-serif;
+    font-size:1rem;
+}
+/*-*-*-*-*-*-*-* termina el main de nosotros */
+
+/* main de contactos*/
+/* propiedades a la section de contacto*/
+.sContacto{
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: 10px 5px 10px #000000;
+    padding: 30px;   
+}
+/* propiedades al form de contacto*/
+#form{
+    background-color: #F3EFEEe3;
+	padding:16px;
+	border-radius:40px;  
+}
+/* propiedades legend H2 de contacto*/
+.legendH2{
+    color: #6E2D0F;
+    font-size:1.5rem;
+    padding: 30px ;
+    text-align: center;
+     font-family: 'Open Sans', sans-serif;
+}
+/* propiedades a los input del form de contacto*/
+.input{
+    font-family: 'Open Sans', sans-serif;
+    font-size:0.8rem;
+    width:250px;
+	padding:3px 10px;
+	border:1px solid #F3EFEE;
+	border-radius:5px;
+	background-color:#d6d6d6;
+	margin:8px 0;
+	display:inline-block;
+    text-align:center;
+}
+/* propiedades al lebel del form de contacto*/
+.label{
+    font-family: 'Open Sans', sans-serif;
+	font-weight:bold;
+    width:250px;
+    font-size:0.8rem;
+}
+
+/* propiedades al box de mensaje  del form de contacto*/
+.textarea{
+	width:250px;
+	height:200px;
+	border:1px solid #F3EFEE;
+	border-radius:5px;
+	background-color:#d6d6d6;			
+	 margin:5px 0px; 
+	resize:none;
+    text-align:center;
+    font-family: 'Open Sans', sans-serif;
+    font-size:0.8rem;
+}
+
+.divFormularioBoton input{
+	width:30%;
+	padding:8px 10px;
+	margin-top:32px;
+    margin-bottom: 20px;
+	box-shadow : 5px 5px  10px  #0c0c0cc4;
+	border-radius:10px;
+	color: #6E2D0F;
+	background-color:#dbcbbd;
+    font-size: 0.7rem;
+    font-weight: bold;  
+} 
+
+.mainComun {
+    background-image: url('../img/fondo1.jpg');
+    background-size: cover;
+    background-attachment:fixed ;  
+    width: 100px 150px;
+
+}
+
+}
+/*-************* MEDIA QUERY tablet**********************/
+@media screen and (min-width: 768px)  {
+   /*- Propiedasdes para em Main -*/
+   /*1.--> Propiedades para el titulo APLICA PARA TODOS LOS HTML */
+   .mainTitulo{
+       font-family: 'Open Sans', sans-serif;
+       font-size:1.4rem;
+       color: #6E2D0F;
+       text-align: center;
+       background-image: linear-gradient(#F3EFEE,#dbcbbd);
+       padding: 4px;
+       text-transform: uppercase;
+       animation-name: aparecer;
+       animation-duration: 2s;
+   }
+   
+   
+   @keyframes aparecer {
+       0%{
+           opacity: 0;
+       }
+       100%{
+           opacity: 1;
+       }
+   }
+   
+   /* propiedades al bloque de productos APLICA PARA INDEX  */
+   .divProd1{
+      display: grid;
+      grid-template-columns: repeat(2,2fr);
+      grid-template-rows: repeat(2,2fr);
+      grid-column-gap: 5px;
+      grid-row-gap: 10px;
+       align-items: center ;
+      align-content: center;
+       justify-content:space-between ; 
+       justify-items: center;  
+      margin: 0px ;
+      padding: 0px;  
+   
+   }
+   /* propiedades al bloque de productos APLICA PARA  PRODUCTOS */
+   .divProd2{
+       display: grid;
+       grid-template-columns: repeat(2,2fr);
+       grid-template-rows: repeat(4,4fr);
+       gap: 10px;
+       align-items: center ;
+       align-content: center;
+       justify-content: center;
+       justify-items: center;
+       margin: 10px;
+       padding: 10px;  
+   }
+   .divProducDest{
+       width: 20vh;
+       padding: 10px;
+       overflow: hidden;
+       position: relative;
+
+   }
+   /*tamaño de las imagenes*/
+   .prodImagen{
+       width: 25vh;
+       transition: transform .75s;
+       inset: 0;
+       object-fit: cover;
+   }
+   
+   .divProducDest:hover {
+    transform: scale(1.05);
+}
+   
+   /*Propiedades al H4  HTML INDEX y H2 Productos */
+   .hDesc{
+       font-family: 'Open Sans', sans-serif;
+       font-size:0.7rem;
+       color: #6E2D0F;
+       text-align: left;
+       width: 100px;
+       height: 50px;
+       overflow: hidden;
+   }
+   .hMasProd{
+   
+       display: inline;
+       background-color: #F3EFEE;
+        box-shadow: 1px 2px 5px #000000; 
+        padding: 10px;   
+       color: #6E2D0F;
+       font-family: 'Open Sans', sans-serif;
+       font-size:0.9rem;
+       border-radius: 30px;
+       position:initial;
+       margin-top: 0px;
+       position: relative;
+       bottom: 20px;
+       right: 15px;
+       border: 1px solid #6E2D0F;
+       outline: 1px solid;
+       outline-color: #6E2D0F;
+       transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);   
+       text-transform: uppercase;   
+   }
+   
+   .hMasProd:hover {
+       box-shadow: inset 0 0 20px #F3EFEE;
+       outline-color: rgba(49, 138, 172, 0);
+       outline-offset: 10px;
+       text-shadow: 1px 1px 6px #fff;
+       background-color: #e2dedc;
+       font-size:1.1rem;
+       /* border-shadow:  */
+     }
+
+ /* Propiedades de la section aplica en preguntas frecuentes y en nosotros */
+/* grid area de HTML NOSOTROS*/
+.mainNosotros{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 0.1fr 1fr 1fr;
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "titulo titulo  titulo"
+    "section section  imagen"
+    "section section  imagen";
+   ;
+}
+#divH1{
+    grid-area: titulo;
+}
+.sNosotros{
+    grid-area: section;
+    padding: 20px;
+}
+.asideNosotros{
+    grid-area: imagen;
+    padding: 10px;
+    margin-top: 50%;
+    display: inline;;
+}
+.asideNosotros img{
+    width: 80%;
+}
+   
+   
+   /* H2 de las preguntas frecuentes */
+   .sectionMainH2{
+       font-family: 'Open Sans', sans-serif;
+      color: #6E2D0F;
+      padding-top: 3% ;
+      text-align: center;
+      font-size: 1.4rem;
+   }
+   /*parrafo de las respuestas de las pregintas frecuentes*/
+   .sectionMainPar{
+      font-family: 'Open Sans', sans-serif;
+      color: #6E2D0F;
+      text-align: center;
+      font-size: 1rem;   
+      padding: 1px;
+   }
+   /* lista de las respuestas de preguntas frecuentes*/
+   .ulList{
+      list-style: none;
+      font-family: 'Open Sans', sans-serif;
+      color: #6E2D0F;
+      padding: 0 ;
+      text-align: center;
+      font-size: 1rem; 
+   }
+   /*-*-*-*-*-* fin del main de prefuntas frecuentes */
+   /* comienzo con main de Nosotros */
+   /* propiedades del H2 y parrafo de nosotros*/
+   
+   #h2Nosotros {
+       color: #6E2D0F;
+       padding: 20px;
+       text-align: center;
+       background-color: #F3EFEEe3;
+        font-family: 'Open Sans', sans-serif;
+       font-size:1.7rem;
+   }
+   #idParrafoNosotros{
+       color: #6E2D0F;
+       padding:  20px;
+       text-align: center;
+       background-color: #F3EFEEe3;
+       font-family: 'Open Sans', sans-serif;
+       font-size:1.3rem;
+   }
+   /*-*-*-*-*-*-*-* termina el main de nosotros */
+   
+   /* main de contactos*/
+   /* propiedades a la section de contacto*/
+   .sContacto{
+       font-family: 'Open Sans', sans-serif;
+       box-shadow: 10px 5px 10px #000000;
+       padding: 30px;   
+       
+   }
+   /* propiedades al form de contacto*/
+   #form{
+       background-color: #F3EFEEe3;
+       padding:16px;
+       border-radius:40px; 
+        
+   }
+   /* propiedades legend H2 de contacto*/
+   .legendH2{
+       color: #6E2D0F;
+       font-size:1.5rem;
+       padding: 30px ;
+       text-align: center;
+       font-family: 'Open Sans', sans-serif;
+   }
+   /* propiedades a los input del form de contacto*/
+   .input{
+       font-family: 'Open Sans', sans-serif;
+       font-size:0.9rem;
+       width:500px;
+       padding:3px 10px;
+       border:1px solid #F3EFEE;
+       border-radius:5px;
+       background-color:#d6d6d6;
+       margin:8px 0;
+       display:inline-block;
+       text-align:center;
+       
+   }
+   /* propiedades al lebel del form de contacto*/
+   .label{
+       font-family: 'Open Sans', sans-serif;
+       display: inline-block;
+       font-weight:bold;
+       width:250px;
+       font-size:0.8rem;
+   }
+   
+   /* propiedades al box de mensaje  del form de contacto*/
+   .textarea{
+       width:500px;
+       height:200px;
+       border:1px solid #F3EFEE;
+       border-radius:5px;
+       background-color:#d6d6d6;			
+        margin:5px 0px; 
+       resize:none;
+       text-align:center;
+       font-family: 'Open Sans', sans-serif;
+       font-size:0.8rem;
+   }
+   
+   .divFormularioBoton input{
+       width:30%;
+       padding:8px 10px;
+       margin-top:32px;
+       margin-bottom: 20px;
+       box-shadow : 5px 5px  10px  #0c0c0cc4;
+       border-radius:10px;
+       color: #6E2D0F;
+       background-color:#dbcbbd;
+       font-size: 1rem;
+       font-weight: bold;  
+   } 
+
+   }
+ /*-************* MEDIA QUERY escritorio**********************/  
+@media only screen and (min-width: 1024px){
+/*- Propiedasdes para em Main -*/
+/*1.--> Propiedades para el titulo APLICA PARA TODOS LOS HTML */
+.mainTitulo{
+    font-family: 'Open Sans', sans-serif;
+    font-size:2.2rem;
+    font-weight: 800;
+    color: #6E2D0F;
+    text-align: center;
+    background-image: linear-gradient(#F3EFEE,#dbcbbd);
+    padding: 1px;
+    text-transform: uppercase;
+    animation-name: aparecer;
+    animation-duration: 2s;
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* propiedades al bloque de productos APLICA PARA  PRODUCTOS */
+.divProd2{
+    display: grid;
+    grid-template-columns: repeat(3,3fr);
+    grid-template-rows: repeat(4,4fr);
+    gap: 10px;
+    align-items: center ;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    margin: 10px;
+    padding: 10px;  
+}
+.divProducDest{
+    width: 60%;
+    padding: 0px;
+    overflow: hidden;
+    position:static;
+}
+/*tamaño de las imagenes*/
+.prodImagen{
+    width: 100%;
+    transition: transform .75s;
+    inset: 0;
+    object-fit: cover;
+}
+.divProducDest2:hover{
+    transform: scale(1.05);
+}
+/*Propiedades al H4  HTML INDEX y H2 Productos */
+.hDesc{
+    font-family: 'Open Sans', sans-serif;
+    font-size:1rem;
+    color: #6E2D0F;
+    text-align: left;
+    width: 225px;
+    height: 50px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+/* propiedades al botón de MAS Productos index*/ 
+.hMasProd{
+
+    display: inline;
+    background-color: #F3EFEE;
+    box-shadow: 1px 2px 5px #000000; 
+    padding: 20px;   
+    color: #6E2D0F;
+    font-family: 'Open Sans', sans-serif;
+    font-size:1rem;
+    border-radius: 20px;
+    position:initial;
+    margin-top: 0px;
+    position: relative;
+    bottom: 40px;
+    right: 20px;
+    border: 1px solid #6E2D0F;
+    outline: 1px solid;
+    outline-color: #6E2D0F;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);   
+    text-transform: uppercase;   
+}
+
+.hMasProd:hover {
+    box-shadow: inset 0 0 20px #F3EFEE;
+    outline-color: rgba(49, 138, 172, 0);
+    outline-offset: 80px;
+    text-shadow: 1px 1px 6px #fff;
+    background-color: #e2dedc;
+    font-size:1.2rem;
+    /* border-shadow:  */
+  }
+/*termina el  main de index/propiedades*/
+/*main de preguntas frecuentes*/
+/* propiedad de main, aplica para HTML prefunta frecuente, contacto y nosotros*/
+.mainComun {
+    background-image: url('../img/fondo1.jpg');
+    background-size: cover;
+    background-attachment:fixed ;  
+    width: 100px 150px;
+
+}
+
+/* H2 de las preguntas frecuentes */
+.sectionMainH2{
+     font-family: 'Open Sans', sans-serif;
+    color: #6E2D0F;
+    padding-top: 2% ;
+    text-align: center;
+    font-size: 2.2rem;
+}
+/*parrafo de las respuestas de las pregintas frecuentes*/
+.sectionMainPar{
+    font-family: 'Open Sans', sans-serif;
+    color: #6E2D0F;
+    text-align: center;
+    font-size: 1.5rem;   
+    padding: 5px;
+}
+/* lista de las respuestas de preguntas frecuentes*/
+.ulList{
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+    color: #6E2D0F;
+    padding: 0 ;
+    text-align: center;
+    font-size: 1.5rem; 
+}
+ /*-*-*-*-*-* fin del main de prefuntas frecuentes */
+ /* comienzo con main de Nosotros */
+ /* propiedades del H2 y parrafo de nosotros*/
+#h2Nosotros {
+    color: #6E2D0F;
+    padding: 20px;
+    text-align: center;
+    background-color: #F3EFEEe3;
+     font-family: 'Open Sans', sans-serif;
+    font-size:2.2rem;
+}
+#idParrafoNosotros{
+    color: #6E2D0F;
+    padding: 39px 200px;
+    text-align: center;
+    background-color: #F3EFEEe3;
+    font-family: 'Open Sans', sans-serif;
+    font-size:1.5rem;
+}
+
+/* Propiedades de la section aplica en preguntas frecuentes y en nosotros */
+/* grid area de HTML NOSOTROS*/
+.mainNosotros{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 0.1fr 1.8fr 1fr;
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "titulo titulo  titulo"
+    "section section  imagen"
+    "section section  imagen";
+   ;
+}
+#divH1{
+    grid-area: titulo;
+}
+.sNosotros{
+    grid-area: section;
+}
+.asideNosotros{
+    grid-area: imagen;
+    margin-top: 0;
+    display: inline;
+}
+.asideNosotros img{
+    width: 100%;
+}
+/*-*-*-*-*-*-*-* termina el main de nosotros */
+
+/* main de contactos*/
+/* propiedades a la section de contacto*/
+.sContacto{
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: 10px 5px 10px #000000;
+    padding: 150px;   
+}
+/* propiedades al form de contacto*/
+#form{
+    background-color: #F3EFEEe3;
+	padding:16px;
+	border-radius:50px;  
+}
+/* propiedades legend H2 de contacto*/
+.legendH2{
+    color: #6E2D0F;
+    font-size:2.2rem;
+    padding: 30px ;
+    text-align: center;
+     font-family: 'Open Sans', sans-serif;
+}
+
+/* propiedades a los input del form de contacto*/
+.input{
+    font-family: 'Open Sans', sans-serif;
+    font-size:1rem;
+    width:500px;
+	padding:3px 10px;
+	border:1px solid #F3EFEE;
+	border-radius:5px;
+	background-color:#d6d6d6;
+	margin:8px 0;
+	display:inline-block;
+    text-align:center;
+}
+/* propiedades al lebel del form de contacto*/
+.label{
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+	font-weight:bold;
+    width:500px;
+    font-size:1rem;
+}
+/* propiedades al box de mensaje  del form de contacto*/
+.textarea{
+	width:500px;
+	height:200px;
+	border:1px solid #F3EFEE;
+	border-radius:5px;
+	background-color:#d6d6d6;			
+	margin:8px 0;
+	resize:none;
+    text-align:center;
+    font-family: 'Open Sans', sans-serif;
+    font-size:1rem;
+}
+
+/* propiedades al boton enviar y borrar  del form de contacto*/
+.divFormularioBoton input{
+	width:30%;
+	padding:8px 16px;
+	margin-top:32px;
+    margin-bottom: 20px;
+	box-shadow : 5px 5px  10px  #0c0c0cc4;
+	border-radius:10px;
+	color: #6E2D0F;
+	background-color:#dbcbbd;
+    font-size: 1rem;
+    font-weight: bold;  
+} 
+
+/*-*-*-*-*-*-* termina el main *-*-*-*-*-*-*/
+    
+}
